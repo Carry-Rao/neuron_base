@@ -5,7 +5,7 @@ LDFLAGS = -lm `pkg-config --libs gtk+-3.0`
 
 # 目录设置
 INCLUDE_DIR = ./include
-CODE_DIR = ./code
+CODE_DIR = ./src
 OUT_DIR = ./out
 PROGRAM_DIR = ./bin
 
