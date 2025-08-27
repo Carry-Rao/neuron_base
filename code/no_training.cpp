@@ -52,7 +52,7 @@ void run_gui_mode(int num_neurons, double width, double height, double threshold
 
 int main(int argc, char* argv[]) {
     // 默认参数
-    int num_neurons = 169;
+    int num_neurons = 200;
     double width = 800.0;
     double height = 600.0;
     double threshold = 80.0;
