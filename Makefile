@@ -13,7 +13,7 @@ PROGRAM_DIR = ./bin
 $(shell mkdir -p $(OUT_DIR) $(PROGRAM_DIR))
 
 # 收集源文件：
-# 1. code目录下的所有cpp文件
+# 1. code目录下的所有cpp文件（包括no_training.cpp）
 # 2. code子目录下的train.cpp和recognize.cpp
 ROOT_CPP_FILES = $(wildcard $(CODE_DIR)/*.cpp)
 SUB_TRAIN_FILES = $(shell find $(CODE_DIR) -type f -name "train.cpp")

@@ -59,7 +59,7 @@ int main(int argc, char* argv[]) {
 
     // 解析命令行参数
     bool use_gui = true; // 默认GUI模式
-    bool output = true;
+    bool output = false;
 
     // 根据模式运行
     if (use_gui) {
