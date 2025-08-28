@@ -1,7 +1,10 @@
 # 编译器设置
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++17 -O2 `pkg-config --cflags gtk+-3.0` -I./include
+CXXFLAGS = -Wall -Wextra -std=c++17 -O2 `pkg-config --cflags gtk+-3.0` -I./include -I./include/stb
 LDFLAGS = -lm `pkg-config --libs gtk+-3.0`
+
+CFLAGS += -O3 -march=native -fopenmp
+CXXFLAGS += -O3 -march=native -fopenmp
 
 # 目录设置
 INCLUDE_DIR = ./include

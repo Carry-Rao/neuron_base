@@ -55,7 +55,7 @@ int main(int argc, char* argv[]) {
     int num_neurons = 200;
     double width = 800.0;
     double height = 600.0;
-    double threshold = 80.0;
+    double threshold = 90;
 
     // 解析命令行参数
     bool use_gui = true; // 默认GUI模式
