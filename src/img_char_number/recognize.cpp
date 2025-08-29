@@ -116,7 +116,7 @@ int main(int argc, char* argv[]) {
     const int INPUT_WIDTH = 28;
     const int INPUT_HEIGHT = 28;
     const int NUM_NEURONS = INPUT_WIDTH * INPUT_HEIGHT + 10;
-    const double THRESHOLD = 150;
+    const double THRESHOLD = 0.99;
     
     // 创建神经网络模拟
     NeuralNetworkSimulation simulation(NUM_NEURONS, SIM_WIDTH, SIM_HEIGHT, THRESHOLD);
@@ -136,11 +136,13 @@ int main(int argc, char* argv[]) {
     // 执行识别
     int result = recognize_digit(simulation, img);
     std::cout << "识别结果: " << result << std::endl;
+    std::clog << result << std::endl;
 
     // 显示识别过程的神经网络状态
     gtk_init(nullptr, nullptr);
     NeuronVisualization visualization(&simulation, SIM_WIDTH, SIM_HEIGHT);
-    visualization.run();
+    //visualization.run();
     
     return 0;
+    
 }
