@@ -116,7 +116,7 @@ int main(int argc, char* argv[]) {
     const int INPUT_WIDTH = 28;
     const int INPUT_HEIGHT = 28;
     const int NUM_NEURONS = INPUT_WIDTH * INPUT_HEIGHT + 10;
-    const double THRESHOLD = 0.99;
+    const double THRESHOLD = 250;
     
     // 创建神经网络模拟
     NeuralNetworkSimulation simulation(NUM_NEURONS, SIM_WIDTH, SIM_HEIGHT, THRESHOLD);

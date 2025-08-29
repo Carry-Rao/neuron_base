@@ -51,6 +51,7 @@ $(OUT_DIR)/%.o: $(CODE_DIR)/%.cpp
 	@mkdir -p $(dir $@)  # 自动创建对应的子目录
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
+
 # 清理目标
 clean:
 	rm -rf $(OUT_DIR)/* $(PROGRAM_DIR)/*

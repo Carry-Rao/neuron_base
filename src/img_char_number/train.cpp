@@ -74,7 +74,7 @@ int main() {
     const int INPUT_WIDTH = 28;   // MNIST格式大小
     const int INPUT_HEIGHT = 28;
     const int NUM_NEURONS = INPUT_WIDTH * INPUT_HEIGHT + 10;  // 输入层 + 10个输出神经元
-    const double THRESHOLD = 0.99;
+    const double THRESHOLD = 250;
     const int TRAIN_STEPS = 1000;
     
     // 创建神经网络模拟
